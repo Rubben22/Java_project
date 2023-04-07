@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="427.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.retea_socializare.FriendsController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="72.0" prefHeight="292.0" prefWidth="332.0" style="-fx-border-color: #ffffff;">
+        <columns>
+            <TableColumn fx:id="firstname" prefWidth="110.0" text="First Name" />
+            <TableColumn fx:id="lastname" prefWidth="110.0" text="Last Name" />
+            <TableColumn fx:id="username2" prefWidth="105.0" text="Username" />
+        </columns>
+      </TableView>
+      <Button fx:id="addFriend" layoutX="199.0" layoutY="383.0" mnemonicParsing="false" onAction="#addFriendAction" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #3da957;" text="Add Friend" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutY="55.0" prefHeight="11.0" prefWidth="715.0" style="-fx-background-color: #2380c2;" />
+      <Label layoutX="28.0" layoutY="14.0" prefHeight="34.0" prefWidth="202.0" text="Manage Friendship" textFill="#2380c2">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="14.0" layoutY="383.0" mnemonicParsing="false" onAction="#deleteFriend" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #c91616;" styleClass="#ff0000" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="request_table" layoutX="383.0" layoutY="124.0" prefHeight="187.0" prefWidth="317.0">
+        <columns>
+          <TableColumn fx:id="first_name_request" prefWidth="83.199951171875" text="First Name" />
+          <TableColumn fx:id="last_name_request" prefWidth="88.00003051757812" text="Last Name" />
+            <TableColumn fx:id="action" prefWidth="139.20001220703125" text="Action" />
+        </columns>
+      </TableView>
+      <Label layoutX="396.0" layoutY="80.0" text="Friend requests" textFill="#2380c2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="358.0" orientation="VERTICAL" prefHeight="427.0" prefWidth="0.0" />
+      <Button fx:id="logoutButton" layoutX="458.0" layoutY="378.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: #2380c2;" text="Log out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
